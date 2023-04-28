@@ -3,32 +3,338 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>here is my title</title>
+	<title>did I break things?</title>
 		<style type="text/css">
-		.newsletter-builder-container {
-			margin: 0 auto;
-			max-width: 600px;
-			width: 100%;
-		}
-		hr {
-			border: 2px solid #000;
-		}
-	.wp-block-newsletter-builder-post{padding:2px}.wp-block-newsletter-builder-post img{height:auto;max-width:600px;width:100%}.wp-block-newsletter-builder-post h2{font-family:Merriweather,Georgia,serif;font-size:24px;line-height:32px;margin-bottom:0;margin-top:0;text-align:center}.wp-block-newsletter-builder-post p{font-family:Verdana,sans-serif}.wp-block-newsletter-builder-post .newsletter-read-more{background-color:red;border:none;color:#fff;display:inline-block;font-family:Verdana,sans-serif;margin:0 auto;padding:3px;text-decoration:none}.wp-block-newsletter-builder-two-up-post{display:flex;flex-direction:row;max-width:600px;width:100%}.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post{max-width:300px;width:50%}.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post img{height:auto;max-width:300px;width:100%}.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post h2{font-family:Verdana,sans-serif;font-size:17px;line-height:26px}	</style>
+	/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/header/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Imported style.css file(s) (applies to SASS and SCSS extensions)
+ * get bundled into one style-index.css file that is meant to be
+ * used both on the front-end and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#block-styles
+ */
+.wp-block-newsletter-builder-header {
+  margin-bottom: 20px;
+  margin-top: 6px;
+}
+
+/*# sourceMappingURL=style-index.css.map*//*!***********************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/post/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Imported style.css file(s) (applies to SASS and SCSS extensions)
+ * get bundled into one style-index.css file that is meant to be
+ * used both on the front-end and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#block-styles
+ */
+.wp-block-newsletter-builder-post h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+.wp-block-newsletter-builder-post .post__byline {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.wp-block-newsletter-builder-post .newsletter-read-more {
+  background-color: #D62827;
+  border: 0;
+  border-radius: 4px;
+  color: #FFF;
+  display: block;
+  font-family: Verdana, sans-serif;
+  margin: 0 auto;
+  padding: 16px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  width: -moz-max-content;
+  width: max-content;
+  max-width: 50%;
+}
+.wp-block-newsletter-builder-post .image-container {
+  position: relative;
+}
+.wp-block-newsletter-builder-post .pro-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*//*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./blocks/two-up-post/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Imported style.css file(s) (applies to SASS and SCSS extensions)
+ * get bundled into one style-index.css file that is meant to be
+ * used both on the front-end and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#block-styles
+ */
+.wp-block-newsletter-builder-two-up-post {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  width: 100%;
+}
+.wp-block-newsletter-builder-two-up-post + .wp-block-newsletter-builder-two-up-post {
+  margin-top: 40px;
+}
+.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post {
+  max-width: 300px;
+  padding-right: 10px;
+  width: 50%;
+}
+.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post img {
+  height: auto;
+  max-width: 300px;
+  width: 100%;
+}
+.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post h3 {
+  margin-top: 20px;
+}
+.wp-block-newsletter-builder-two-up-post div.wp-block-newsletter-builder-post + div.wp-block-newsletter-builder-post {
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=style-index.css.map*//*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./scss/reset.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * Email Reset
+ *
+ * https://templates.mailchimp.com/development/css/reset-styles/
+ */
+body,
+.main,
+.mso {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-text-size-adjust: 100%;
+}
+
+img {
+  border: 0 none;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+
+a img {
+  border: 0 none;
+}
+
+/**
+ * Some email clients add space below images by default, which is problematic if
+ * you’re tiling images. Attach the `.image-fix` class to remove the space. Be
+ * aware that, by setting images to block-level elements, you can’t align them
+ * without resorting to the float or position CSS properties, which aren’t widely
+ * supported.
+ */
+.image-fix {
+  display: block;
+}
+
+table,
+td {
+  border-collapse: collapse;
+}
+
+table {
+  background-color: #fff;
+  min-width: 320px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+#bodyTable {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  width: 100% !important;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./scss/global.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************/
+.newsletter-builder-container {
+  margin: 0 auto;
+  max-width: 600px;
+  min-width: 320px;
+  width: 320px;
+  width: calc(28000% - 167400px);
+}
+
+img {
+  display: block;
+  max-width: 600px;
+  width: 100%;
+}
+
+.newsletter-builder-footer-links {
+  color: #999;
+  font-family: Verdana, sans-serif;
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-top: 6px;
+  text-align: center;
+}
+.newsletter-builder-footer-links a {
+  color: #999;
+  text-decoration: underline;
+}
+
+.has-text-align-left {
+  text-align: left;
+}
+
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./scss/core-blocks/heading.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, serif;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 26px;
+}
+.wp-block-newsletter-builder-two-up-post h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./scss/core-blocks/paragraph.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+p {
+  font-family: Merriweather, Georgia, serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./scss/core-blocks/button.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-button {
+  font-weight: bold;
+  margin: 0 auto;
+  max-width: 50%;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.wp-element-button {
+  background-color: #D62827;
+  border-radius: 4px;
+  color: #FFF;
+  display: inline-block;
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-text-size-adjust: none;
+}
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./scss/core-blocks/separator.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+.wp-block-separator,
+hr {
+  background-color: #979797;
+  border: 0;
+  height: 2px;
+  margin: 30px 0;
+}
+
+/*# sourceMappingURL=index.css.map*/	</style>
 	</head>
 
-<body>
-
-	<div class="newsletter-builder-container">
-		<div class="wp-block-newsletter-builder-header">
+<!--[if mso]>
+<body class="mso">
+<![endif]-->
+<!--[if !mso]><!-->
+<body class="main">
+<!--<![endif]-->
+	<table class="wrapper" cellpadding="0" cellspacing="0" role="presentation">
+		<tbody>
+			<tr>
+				<td>
+											<div class="newsletter-builder-container">
+							<!--[if mso]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 600px"><![endif]-->
+							<div class="wp-block-newsletter-builder-header" role="banner" align="center">
 	<img decoding="async" width="800" height="112" src="./test email_files/headers_generic.png" class="attachment-full size-full" alt="" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1"></div>
 
 
 <div class="wp-block-newsletter-builder-post">
-								<h2>‘All American: Homecoming’ Star Netta Walker Wants to Have a Hand in It All: ‘I Aspire to Be Like a Reese Witherspoon or Margot Robbie’</h2>
-																	<p>By Natalie Oganesyan</p>
-																		<img width="1200" height="675" src="./test email_files/all-american-homecoming-netta-walker.jpg" class="attachment-full size-full" alt="all-american-homecoming-netta-walker" decoding="async" loading="lazy" srcset="https://the-wrap.alley.test/wp-content/uploads/2023/02/all-american-homecoming-netta-walker.jpg 1200w, https://the-wrap.alley.test/wp-content/uploads/2023/02/all-american-homecoming-netta-walker-300x169.jpg 300w, https://the-wrap.alley.test/wp-content/uploads/2023/02/all-american-homecoming-netta-walker-1024x576.jpg 1024w, https://the-wrap.alley.test/wp-content/uploads/2023/02/all-american-homecoming-netta-walker-768x432.jpg 768w, https://the-wrap.alley.test/wp-content/uploads/2023/02/all-american-homecoming-netta-walker-298x168.jpg 298w, https://the-wrap.alley.test/wp-content/uploads/2023/02/all-american-homecoming-netta-walker-936x527.jpg 936w" sizes="(max-width: 1200px) 100vw, 1200px" data-portal-copyright="TheWrap" data-has-syndication-rights="1">																		<h3>The actor talks about her character’s mental health journey in Season 2, upcoming short film and hopes to direct and produce</h3>
-																		<p><a href="https://www.thewrap.com/tag/all-american-homecoming/" target="_blank" rel="noreferrer noopener">“All American: Homecoming”</a> actress Netta Walker wants it all. The 26-year-old, Jacksonville-hailing CW star isn’t satisfied with just occupying the small screen, always seeking to immerse herself in all aspects of worldbuilding, from the writers room to the various minutiae of the production process.</p><div id="mob-box-ad-a" class="yad-mob-box-ad-a"></div><p>“In the long run, I aspire to be like a Reese Witherspoon or Margot Robbie: women who know what they find interesting and challenging and they’re like, ‘There is money here for this to be done. Who’s trying to give me the money to do it? Because you should trust my vision.’ And to be able to have people trust that vision,” Walker, who portrays sophomore Keisha in the HBCU-set series, told TheWrap in an interview. “I know that they’ve worked for so long to be able to establish themselves that way, and I’m like, ‘Let me figure out what I have to do to make sure I can get into that same realm.’ Because I am fascinated by it all.”</p><div id="dsk-box-ad-e" class="yad-dsk-box-ad-e"></div>					<a class="newsletter-read-more" href="https://the-wrap.alley.test/all-american-homecoming-netta-walker-keisha-interview/">
-						Read The Full Story Here					</a>
+								<h2>Dominion’s Lawsuit Won’t Break Fox News – But It Opens the Door to Other Financial Troubles | Analysis</h2>
+																	<p class="post__byline">By Lucas Manfredi</p>
+																		<div class="image-container">
+						<img width="1200" height="675" src="./test email_files/murdochs.jpg" class="attachment-full size-full" alt="rupert-lachlan-murdoch" decoding="async" loading="lazy" srcset="https://the-wrap.alley.test/wp-content/uploads/2023/01/murdochs.jpg 1200w, https://the-wrap.alley.test/wp-content/uploads/2023/01/murdochs-300x169.jpg 300w, https://the-wrap.alley.test/wp-content/uploads/2023/01/murdochs-1024x576.jpg 1024w, https://the-wrap.alley.test/wp-content/uploads/2023/01/murdochs-768x432.jpg 768w, https://the-wrap.alley.test/wp-content/uploads/2023/01/murdochs-298x168.jpg 298w, https://the-wrap.alley.test/wp-content/uploads/2023/01/murdochs-936x527.jpg 936w" sizes="(max-width: 1200px) 100vw, 1200px" data-portal-copyright="TheWrap" data-has-syndication-rights="1">						<img decoding="async" class="pro-badge" src="./test email_files/pro-overlay.png" alt="Pro Article">					</div>
+																		<h3>Lawsuits by shareholders and tough negotiations with cable distributors could add to the company’s financial pain beyond the defamation case</h3>
+																		<p>Fox Corporation will not sink below the waves to oblivion, even it has to pay the damages Dominion Voting Systems is seeking in its <a href="https://www.thewrap.com/rupert-murdoch-fox-news-hosts-spread-election-lie-trump/" data-type="post" data-id="7222003" target="_blank" rel="noreferrer noopener">massive, $1.6 billion lawsuit</a>, according to TheWrap’s review of the company’s financials. But it may well leave Rupert Murdoch’s company open to other mounting financial troubles — any one of which could deal a potentially fatal blow.</p><div id="mob-box-ad-a" class="yad-mob-box-ad-a"></div><p>Fox, which has a market capitalization of $18 billion, currently has $4.1 billion in cash and cash equivalents and an unused $1 billion credit facility at its disposal, according to its <a href="https://investor.foxcorporation.com/static-files/ec80ab46-1fcf-4431-a35b-726ff11a1a3b" target="_blank">latest 10-Q filing</a>. That means it could weather the worst-case scenario: a five-week trial scheduled to kick off on April 17 and Dominion being awarded full damages. </p><div id="dsk-box-ad-e" class="yad-dsk-box-ad-e"></div>																		<div class="wp-block-button has-text-align-center">
+						<!--[if mso]>
+						<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://the-wrap.alley.test/fox-corporation-dominion-voting-systems-lawsuit-financial-impact/" style="height:48px;v-text-anchor:middle;width:200px;" arcsize="10%" stroke="f" fillcolor="#D62827">
+							<w:anchorlock/>
+							<center>
+						<![endif]-->
+						<a class="wp-element-button" href="https://the-wrap.alley.test/fox-corporation-dominion-voting-systems-lawsuit-financial-impact/">
+							Read The Full Story Here						</a>
+						<!--[if mso]>
+							</center>
+						</v:roundrect>
+						<![endif]-->
+					</div>
 							</div>
 
 
@@ -38,24 +344,32 @@
 
 
 <div class="wp-block-newsletter-builder-two-up-post"><div class="wp-block-newsletter-builder-post">
-												<img decoding="async" width="1200" height="675" src="./test email_files/murdochs.jpg" class="attachment-full size-full" alt="rupert-lachlan-murdoch" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">														<h2>Dominion’s Lawsuit Won’t Break Fox News – But It Opens the Door to Other Financial Troubles | Analysis</h2>
+												<div class="image-container">
+						<img decoding="async" width="1200" height="675" src="./test email_files/murdochs.jpg" class="attachment-full size-full" alt="rupert-lachlan-murdoch" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">						<img decoding="async" class="pro-badge" src="./test email_files/pro-overlay.png" alt="Pro Article">					</div>
+														<h2>Dominion’s Lawsuit Won’t Break Fox News – But It Opens the Door to Other Financial Troubles | Analysis</h2>
 																														</div>
 
 
 <div class="wp-block-newsletter-builder-post">
-												<img decoding="async" width="1200" height="675" src="./test email_files/Steven-Spielberg.jpg" class="attachment-full size-full" alt="" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">														<h2>Steven Spielberg Tells Colbert He 'Burst Into Tears' When He First Saw Michelle Williams and Paul Dano as His Parents</h2>
+												<div class="image-container">
+						<img decoding="async" width="1200" height="675" src="./test email_files/murdochs.jpg" class="attachment-full size-full" alt="rupert-lachlan-murdoch" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">						<img decoding="async" class="pro-badge" src="./test email_files/pro-overlay.png" alt="Pro Article">					</div>
+														<h2>Dominion’s Lawsuit Won’t Break Fox News – But It Opens the Door to Other Financial Troubles | Analysis</h2>
 																														</div>
 </div>
 
 
 
 <div class="wp-block-newsletter-builder-two-up-post"><div class="wp-block-newsletter-builder-post">
-												<img decoding="async" width="1200" height="675" src="./test email_files/horter.jpg" class="attachment-full size-full" alt="Wayne Shorter" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">														<h2>Wayne Shorter, Saxophonist and Founding Father of 20th Century Jazz, Dies at 89</h2>
+												<div class="image-container">
+						<img decoding="async" width="1200" height="675" src="./test email_files/trump.fox_.jpg" class="attachment-full size-full" alt="Donald Trump" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">											</div>
+														<h2>Fox News Has a 'Soft Ban' in Place for Donald Trump – His Last Appearance Was Nearly 6 Months Ago</h2>
 																														</div>
 
 
 <div class="wp-block-newsletter-builder-post">
-												<img decoding="async" width="4001" height="1485" src="./test email_files/CNET-Main-Logo-Red.png" class="attachment-full size-full" alt="CNET logo" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">														<h2>CNET Lays Off 10% of Staff Just Weeks After Launching Articles Written by AI</h2>
+												<div class="image-container">
+						<img decoding="async" width="1200" height="675" src="./test email_files/Megan.jpg" class="attachment-full size-full" alt="M3GAN" loading="lazy" data-portal-copyright="TheWrap" data-has-syndication-rights="1">						<img decoding="async" class="pro-badge" src="./test email_files/pro-overlay.png" alt="Pro Article">					</div>
+														<h2>'M3GAN' Hands Peacock Its First No. 1 Streaming Movie of 2023 | Chart</h2>
 																														</div>
 </div>
 
@@ -68,12 +382,12 @@
 
 <div class="wp-block-columns is-layout-flex wp-container-3">
 <div class="wp-block-column is-layout-flow" style="flex-basis:33.33%"><div class="wp-block-image">
-<figure class="aligncenter size-large"><img decoding="async" width="1024" height="576" src="./test email_files/nato-logo-1024x576.jpg" alt="" class="wp-image-7223736" srcset="https://the-wrap.alley.test/wp-content/uploads/2023/03/nato-logo-1024x576.jpg 1024w, https://the-wrap.alley.test/wp-content/uploads/2023/03/nato-logo-300x169.jpg 300w, https://the-wrap.alley.test/wp-content/uploads/2023/03/nato-logo-768x432.jpg 768w, https://the-wrap.alley.test/wp-content/uploads/2023/03/nato-logo-298x168.jpg 298w, https://the-wrap.alley.test/wp-content/uploads/2023/03/nato-logo-936x527.jpg 936w, https://the-wrap.alley.test/wp-content/uploads/2023/03/nato-logo.jpg 1200w" sizes="(max-width: 1024px) 100vw, 1024px"></figure></div></div>
+<figure class="aligncenter"><img alt=""></figure></div></div>
 
 
 
 <div class="wp-block-column is-layout-flow" style="flex-basis:66.66%">
-<p>test information about the sponsor</p>
+<p></p>
 </div>
 </div>
 </div></div>
@@ -98,8 +412,15 @@
 
 
 
-<p class="has-text-align-center">TheWrap | 2034 Armacost Ave Los Angeles, CA 90025</p><div id="mob-box-ad-b" class="yad-mob-box-ad-b"></div>
-	</div>
+<p class="has-text-align-center">TheWrap | 2034 Armacost Ave Los Angeles, CA 90025</p><div id="mob-box-ad-b" class="yad-mob-box-ad-b"></div>							<div class="newsletter-builder-footer-links">
+								<preferences>Preferences</preferences> | <unsubscribe>Unsubscribe</unsubscribe>
+							</div>
+							<!--[if mso]></td></tr></table><![endif]-->
+						</div>
+										</td>
+			</tr>
+		</tbody>
+	</table>
 
 
 </body></html>
